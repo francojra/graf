@@ -39,7 +39,8 @@ view(dados1)
 ## Gráfico de barras com desvio padrão e texto
 
 ggplot(dados1, aes(especie, media)) +
-  geom_col(color = "darkblue", fill = "lightblue") +
+  geom_col(color = "darkblue", fill = "lightblue",
+           width = 0.7) +
   geom_errorbar(aes(ymin = media - sd, ymax = media + sd),
                 size = 0.8, width = 0.2) +
   scale_x_discrete(breaks = c("Pinguim-de-adélia",
