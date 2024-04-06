@@ -1,3 +1,9 @@
-# Gráficos com o pacote ggplot2
+# Gráficos com ggplot2 
+# Autoria do script: Jéanné Franco 
+# Data: 04/04/2024 
 
-Exemplos de gráficos com pacote ggplot2 e dados de pinguins.
+## Tópicos do script
+
+1. Carregar pacotes;
+2. Carregar dados;
+3. Manipulação de dados;
