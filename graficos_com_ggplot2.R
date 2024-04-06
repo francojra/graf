@@ -52,7 +52,12 @@ ggplot(dados1, aes(especie, media)) +
   theme_clean() +
   theme(axis.text = element_text(color = "black"))
   
-  
+## Gráfico de dispersão entre comprimento de nadadeira e massa corporal
+## por espécie
+
+ggplot(dados, aes(x = comprimento_nadadeira, y = massa_corporal,
+                  color = especie)) +
+  geom_point()
   
   
   
