@@ -46,7 +46,7 @@ ggplot(dados1, aes(especie, media)) +
                    "Pinguim-de-barbicha", "Pinguim-gentoo"),
                    labels = c("Pinguim de Adélia",
                     "Pinguim de Barbicha", "Pinguim Gentoo")) +
-  geom_text(aes(label = n), vjust = 4) +
+  geom_text(aes(label = n), vjust = 4, size = 3.3) +
   labs(x = "Espécies", y = "Massa corporal (kg)") +
   theme_clean() +
   theme(axis.text = element_text(color = "black"))
