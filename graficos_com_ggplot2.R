@@ -57,8 +57,17 @@ ggplot(dados1, aes(especie, media)) +
 
 ggplot(dados, aes(x = comprimento_nadadeira, y = massa_corporal,
                   color = especie)) +
-  geom_point()
-  
+  geom_point(size = 2.8) +
+  scale_color_manual(values = c("#831903", "#646773", "#123424"),
+    breaks = c("Pinguim-de-adélia",
+                   "Pinguim-de-barbicha", "Pinguim-gentoo"),
+    labels = c("Pinguim de Adélia",
+                    "Pinguim de Barbicha", "Pinguim Gentoo"),
+    name = "Espécie") +
+  labs(x = "Comprimento da nadadeira (mm)", 
+       y = "Massa corporal (kg)") +
+  theme_minimal() +
+  theme(axis.text = element_text(color = "black"))
   
   
   
