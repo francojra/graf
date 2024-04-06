@@ -37,4 +37,25 @@ view(dados1)
 # Gráfico ggplot2 --------------------------------------------------------------------------------------------------------------------------
 
 ggplot(dados1, aes(especie, media)) +
-  geom_col()
+  geom_col(color = "darkblue", fill = "lightblue") +
+  geom_errorbar(aes(ymin = media - sd, ymax = media + sd),
+                size = 0.8, width = 0.2) +
+  scale_x_discrete(breaks = c("Pinguim-de-adélia",
+                   "Pinguim-de-barbicha", "Pinguim-gentoo"),
+                   labels = c("Pinguim de Adélia",
+                    "Pinguim de Barbicha", "Pinguim Gentoo")) +
+  labs(x = "Espécies", y = "Massa corporal (kg)")
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
