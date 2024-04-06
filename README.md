@@ -7,3 +7,4 @@
 1. Carregar pacotes;
 2. Carregar dados;
 3. Manipulação de dados;
+4. Gráfico ggplot2.
