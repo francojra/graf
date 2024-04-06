@@ -36,6 +36,8 @@ view(dados1)
 
 # Gráfico ggplot2 --------------------------------------------------------------------------------------------------------------------------
 
+## Gráfico de barras com desvio padrão e texto
+
 ggplot(dados1, aes(especie, media)) +
   geom_col(color = "darkblue", fill = "lightblue") +
   geom_errorbar(aes(ymin = media - sd, ymax = media + sd),
@@ -44,7 +46,9 @@ ggplot(dados1, aes(especie, media)) +
                    "Pinguim-de-barbicha", "Pinguim-gentoo"),
                    labels = c("Pinguim de Adélia",
                     "Pinguim de Barbicha", "Pinguim Gentoo")) +
-  labs(x = "Espécies", y = "Massa corporal (kg)")
+  labs(x = "Espécies", y = "Massa corporal (kg)") +
+  theme_clean() +
+  theme(axis.text = element_text(color = "black"))
   
   
   
