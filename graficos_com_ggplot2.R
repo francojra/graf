@@ -33,3 +33,8 @@ dados1 <- dados |>
             se = sd/sqrt(n))
 
 view(dados1)
+
+# Gráfico ggplot2 --------------------------------------------------------------------------------------------------------------------------
+
+ggplot(dados1, aes(especie, media)) +
+  geom_col()
